@@ -1,0 +1,42 @@
+.favorites__container {
+    text-align: center;
+    overflow-y: scroll;
+    height: 100vh;
+    .counter__products {
+        margin-top: 10px;
+    }
+    .favorites_title {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .favorites__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 280px;
+        
+        .item__container {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            margin-top: 10px;
+        }
+
+        .item__counter {
+            margin-bottom: 10px;
+        }
+
+        .favorites__delete {
+            cursor: pointer;
+            &:hover {
+                color: red;
+            }
+        }
+    }
+
+    .favorites_image {
+        width: 40px;
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,33 @@
+@use "sass:map";
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.heartModal__container {
+    @include position(fixed);
+    @include flex(column, flex-end);
+    margin-top: 20px;
+    margin-right: -20px;
+    height: 100vh;
+    min-width: 60vw;
+    overflow: scroll;
+    overscroll-behavior: contain;
+
+    .heartModal_content {
+        background-color: $secondary-color;
+        min-width: 60vw;
+        overflow: scroll;
+        overscroll-behavior: contain;
+        padding: 1.5rem;
+    }
+
+    .close_cartModal {
+        background-color: transparent;
+            border: none;
+            margin-top: 1.5rem;
+            color: $terciary-dark-color;
+            cursor: pointer;
+            &:hover {
+                    color: red;
+                }
+    }
+}

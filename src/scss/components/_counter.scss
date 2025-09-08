@@ -1,0 +1,31 @@
+.counter__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .counter__minus {
+        width: 50px;
+        cursor: pointer;
+
+        &:hover {
+                    color: red;
+                }
+    }
+
+        .counter__plus {
+        @extend .counter__minus;
+
+        &:hover {
+                    color: green;
+                }
+    }
+
+        .counter__delete {
+        @extend .counter__minus;
+
+        &:hover {
+                    color: red;
+                }
+    }
+
+}

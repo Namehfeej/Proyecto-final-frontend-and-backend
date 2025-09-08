@@ -1,0 +1,52 @@
+@use '../utils/mixins' as *;
+
+
+.about-us-container {
+    border-radius: 0.5rem; 
+    margin-top: 20px;
+    .title-juegos {
+        margin-top: 20px
+
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+.about-container__mision {
+    @include flex(column, center);
+    padding: 1rem;
+    @include boxStyle;
+    width: 85%;
+    margin-left: 8%;
+    margin-bottom: 1.5rem;
+}
+
+.about-container__vision {
+    @extend .about-container__mision;
+}
+
+.about-container__map {
+    width: 85%;
+    margin-left: 8%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    .about-container-map__googlemaps {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

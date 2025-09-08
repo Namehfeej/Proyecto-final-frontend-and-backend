@@ -1,0 +1,63 @@
+@use '../utils/variables' as *;
+
+.shoppingCart__container {
+    text-align: center;
+    overflow-y: scroll;
+    height: 100vh;
+    .counter__products {
+        margin-top: 10px;
+    }
+
+    .total__amount {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 1.5rem;
+
+        &-hidden {
+            visibility: hidden;
+        }
+    }
+
+
+
+    .buy_over__container {
+        margin-top: 1.5rem;
+        &-hidden {
+            visibility: hidden;
+        }
+        .buy_over__button {
+            cursor: pointer;
+            font-size: small;
+            &:hover {
+                background-color: $primary-glow-color;
+            }
+            
+        }
+    }
+
+    .shoppingCart__content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 110px;
+        padding: 1rem;
+        max-width: 280px;
+        
+        .item__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .item__counter {
+            margin-bottom: 10px;
+        }
+    }
+
+    .shoppingCart_image {
+        width: 40px;
+        border-radius: 8px;
+    }
+}

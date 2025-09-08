@@ -1,0 +1,113 @@
+//breakpoints for the project
+$grid-breakpoints: (
+  xs: 360px,
+  sm: 600px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1920px
+);
+/*
+$breakpoint-xs: 360px; // Extra small devices (phones, 600px and down)
+$breakpoint-sm: 600px; // Small devices (tablets, 600px and up)
+$breakpoint-md: 960px; // Medium devices (desktops, 960px and up)
+$breakpoint-lg: 1280px; // Large devices (large desktops, 1280px and up)
+$breakpoint-xl: 1920px; // Extra large devices (large desktops, 1920px and up)
+*/
+
+
+$grid-width: (
+  xs: 360px,
+  sm: 600px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1920px
+);
+
+/*
+$grid-width-xs: 460px;
+$grid-width-sm: 720px; // 100% width for small devices
+$grid-width-md: 920px; // 100% width for medium devices      
+$grid-width-lg: 1120px; // 100% width for large devices
+$grid-width-xl: 1320px; // 100% width for extra large devices
+*/
+
+
+
+// Color palette for the project
+//https://coolors.co/palette/ede0d4-e6ccb2-ddb892-b08968-7f5539-9c6644
+//https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
+
+$primary-color: #EDE0D4;
+$secondary-color: #E6CCB2;
+$terciary-color: #DDB892;
+
+$primary-dark-color: #7f5539;
+$secondary-dark-color: #9C6644;
+$terciary-dark-color: #B08968;
+
+$primary-font-color: #F8F9FA;
+$secondary-font-color: #E9ECEF;
+$terciary-font-color: #DEE2E6;
+$quaternary-font-color: #CED4DA;
+$quinary-font-color: #ADB5BD;
+
+$primary-dark-font-color: #212529;
+$secondary-dark-font-color: #343A40;
+$terciary-dark-font-color: #495057;
+$quaternary-dark-font-color: #6C757D;
+
+$primary-glow-color: #ffd43b;
+
+
+//Fonts for the project
+$font-family-h1: "Permanent Marker", cursive, "sans-serif";
+$font-family-h2: 'Caveat', cursive;
+$font-family-h3: 'Caveat', cursive;
+$font-family-p: 'Caveat', cursive;
+$font-size: 16px;
+$font-size-small: 14px;
+$font-size-large: 18px;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+
+//Layout variables
+
+$body-bg-color: $primary-color;
+$navbar-bg-color: $primary-dark-color;
+
+// Spacing variables
+
+$spacings: (
+    m: margin,
+    mt: margin-top,
+    mb: margin-bottom,
+    ml: margin-left,
+    mr: margin-right,
+    p: padding,
+    pt: padding-top,
+    pb: padding-bottom,
+    pl: padding-left,
+    pr: padding-right,
+);
+
+//Grid
+
+$grid-columns: 12;
+
+// cards width and height
+$card-width: 250px;
+$card-height: 300px;
+
+//cart color
+
+$cart-color: rgb(28, 218, 28);
+$cart-color-dark: darkgreen;
+
+// Height
+
+$main-height: 100%;
+
+// validations
+
+$danger-color: red;

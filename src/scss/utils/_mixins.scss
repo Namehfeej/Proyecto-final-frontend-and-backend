@@ -1,0 +1,87 @@
+@use "sass:map";
+@use '../utils/variables' as *;
+
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin flex($direction, $justifyContent) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin position($position) {
+    position: $position;
+}
+
+@mixin visibility($visible){
+    visibility: $visible;
+}
+
+@mixin inputStyle(){
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-top: 4px;
+}
+
+@mixin moveElement($y, $x) {
+    transform: translate($y, $x);
+}
+
+@mixin boxStyle {
+    background-color: $terciary-color;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px $terciary-dark-font-color;
+}
+
+@mixin create-container-width () {
+    @each $bp, $w in $grid-breakpoints {
+        @media (min-width: $w) {
+            max-width: map.get($grid-width, $bp);
+        }
+    }
+}
+
+
+@mixin media-dxs {
+    @media screen and (min-width: 320px) {
+        @content;
+    }
+}
+
+@mixin media-ds {
+    @media screen and (min-width: 480px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 680px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin errorForm {
+    color: $danger-color;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}

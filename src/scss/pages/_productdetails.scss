@@ -1,0 +1,38 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.main-container__product-details {
+    @include flex(column, center);
+}
+
+.product-details_page {
+    
+}
+
+.products-details__container {
+ 
+
+    .products-details__card {
+
+        .products-details__images {
+            @include flex(column, center);
+
+            img {
+                border-radius: 10px;
+                margin: 10px;
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    margin: 1rem;
+}

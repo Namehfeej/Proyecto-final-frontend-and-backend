@@ -1,0 +1,119 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.about-card-info {
+    @include flex(column, center);
+    gap: 10px;
+    background-color: $terciary-color;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px $terciary-dark-font-color;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 20px;
+
+    .form-container {
+        @include flex(column, center);
+        gap: 10px;
+    
+
+       &-contact__name {
+        width: 100%;
+        @include flex(column, center);
+
+            input {
+                @include inputStyle();
+                &.with-error {
+                    border-color: $danger-color;
+                }
+            }
+
+       }
+
+       &-contact__subject {
+        @extend .form-container-contact__name;
+       }
+
+       &-contact__email {
+        @extend .form-container-contact__name;
+       }
+
+       &-contact__feedback {
+        @extend .form-container-contact__name;
+
+        .submit-button {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            &:hover {
+                background-color: $terciary-dark-color;
+            }
+        }
+       }
+
+ 
+ .form__error {
+        @include errorForm();
+         @include media-dxs {
+            .home-btn-container {
+                margin-bottom: 20rem;
+            }
+            .form-container {
+                margin-bottom: 20rem;
+            }
+            .main-container__contact {
+                height: auto;
+            }
+         }
+
+       }
+       
+    }
+
+    .form-container__product {
+        @include flex(column, center);
+        gap: 10px;
+        padding-top: 2rem;
+
+        .form__input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 4px;
+            margin-bottom: 4px;
+                &.with-error {
+                    border-color: $danger-color;
+                    display: flex;
+                    flex-direction: column;
+                }
+        }
+
+        label {
+            width: 100%;
+            @include flex(row, center);
+            column-gap: 8px;
+            &[required] {
+                &::after {
+                    content: " (*)";
+                    color: $danger-color;
+                }
+            }
+            margin-bottom: 8px;
+        }
+        .submit-button {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            &:hover {
+                background-color: $terciary-dark-color;
+            }
+        }
+        .form__error {
+            @include errorForm();
+           }
+    }
+}
+
+
+

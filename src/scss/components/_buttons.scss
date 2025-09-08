@@ -1,0 +1,113 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+
+
+.home-btn_container {
+    @include flex(column, center);
+    a {
+        svg {
+            width: 30px;
+            height: 30px;
+
+            &:hover {
+                cursor: pointer;
+                text-shadow: $cart-color-dark 4px 0 4px;
+                color: $primary-glow-color;
+                @include transition-ease;
+            }
+        }
+    }
+}
+
+
+
+.home-btn__container-alta {
+    @include flex(column, center);
+    margin-top: 25rem;
+    .home-btn {
+        i {
+            &:hover {
+                cursor: pointer;
+                text-shadow: $cart-color-dark 4px 0 4px;
+                @include transition-ease;
+            }
+        }
+    }
+}
+
+.submit-button {
+    background-color: $primary-dark-color;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px $terciary-dark-font-color;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    svg {
+        width: 24px;
+        height: 24px;
+            &:hover {
+                cursor: pointer;
+                color: $primary-glow-color;
+                @include transition-ease;
+            }
+    }
+}
+
+.btn-buy__container {
+    @extend .submit-button;
+    margin-bottom: 10px;
+    @include transition-ease;
+    width: 120px;
+    display: inline-block;
+    svg {
+        width: 20px;
+        height: 20px;
+        @include moveElement (4px, 4px)
+    }
+
+    .btn-buy {
+        border-radius: none;
+        border-style: none;
+         cursor: pointer;
+         background-color: transparent;
+
+        &:hover {
+            background-color: transparent;
+        }
+        &-active {
+            background-color: $terciary-dark-color;
+                    svg {
+                        color: $cart-color;
+                    }
+                cursor: not-allowed;
+                color: $cart-color-dark;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: $terciary-dark-color;
+        text-shadow: $cart-color-dark 1px 0 1px;
+        svg {
+            color: $cart-color;
+        }
+    }
+    
+}
+
+.counter__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+

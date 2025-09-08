@@ -1,0 +1,72 @@
+@use '../utils/variables' as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $terciary-dark-color;
+    height: 100vh;
+    font-family: $font-family-h1;
+    display: flex;
+    flex-direction: column;
+}
+h1, h2, h3 {
+    font-weight: $font-weight-normal;
+    color: $primary-dark-font-color;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: $secondary-dark-font-color;
+    text-decoration: none;
+}
+
+.home-title {
+    text-align: center;
+    padding-top: 50px;
+        .home-title__glow {
+        font-size: 45px;
+        color: $primary-dark-font-color;
+        animation: glow 2s ease-in-out infinite alternate;
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px $primary-glow-color, 0 0 10px $primary-glow-color, 0 0 20px $primary-glow-color, 0 0 40px $primary-glow-color, 0 0 80px $primary-glow-color;
+            }
+            /*
+            100% {
+                text-shadow: 0 0 10px $secondary-glow-color, 0 0 20px $secondary-glow-color, 0 0 40px $secondary-glow-color, 0 0 80px $secondary-glow-color, 0 0 160px $secondary-glow-color;
+            }
+            */
+            
+        }
+    }
+    p {
+            font-size: $font-size-large;
+            text-align: center;
+        }
+}
+
+
+.main-container {
+    width: 100%;
+    padding-top: 3.5rem;
+}
+
+.main-container__aboutUs {
+    @extend .main-container;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+// Fonts for the project
+/*
+Examples:
+
+
+.caveat-<uniquifier> {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} --> 
+ 
+Italic: 0
+Weight: 400 – 700
+
+.yuji-boku-regular {
+  font-family: "Yuji Boku", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  --> Regular 400
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+  -->Regular 400
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Yuji+Boku&display=swap');
+
+* {
+    font-family: "Permanent Marker", cursive, "sans-serif";
+    font-weight: 400;
+    font-style: normal;
+}
+

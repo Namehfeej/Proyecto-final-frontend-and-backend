@@ -1,0 +1,29 @@
+
+@use "../scss/base/base.scss";
+@use "../scss/base/typography";
+
+@use "./layout/navbar.scss";
+@use "./layout/footer.scss";
+@use "./layout/responsive.scss";
+@use "./layout/grid.scss";
+@use "./layout/menu.scss";
+
+@use "./components/buttons.scss";
+@use "./components/cards.scss";
+@use "./components/form.scss";
+@use "./components/cartmodal.scss";
+@use "./components/heartmodal.scss";
+@use "./components/shoppingcart.scss";
+@use "./components/checkout.scss";
+@use "./components/favorites.scss";
+@use "./components/counter.scss";
+
+@use "./pages/aboutus.scss";
+@use "./pages/alta.scss";
+@use "./pages/contact.scss";
+@use "./pages/productdetails.scss";
+
+
+
+
+

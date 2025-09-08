@@ -1,0 +1,103 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.product-card__container {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    border-radius: 0.5rem;
+    background-color: $secondary-color;
+    border: 1pxs solid $primary-color;
+    margin-top: 10px;
+
+    .product-card {
+        @include flex(column, space-between);
+        padding: 1rem;
+        @include boxStyle;
+        margin: 1rem;
+
+        .icon-favorite {
+            bottom: 20px;
+            display: flex;
+            cursor: pointer;
+            color: $primary-dark-color;
+            svg {
+                width: 25px;
+                height: 25px;
+                &:hover {
+                    color: red;
+                }
+            }
+            &-active {
+                bottom: 20px;
+                display: flex;
+                cursor: not-allowed;
+                color: red;
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+
+        .product-card__info {
+            @include flex(column, center);
+            text-align: center;
+            @include boxStyle;
+            width: 100%;
+
+            h3 {
+                font-size: $font-size-large;
+                font-weight: $font-weight-bold;
+                color: $primary-dark-font-color;
+                margin-bottom: 0.5rem;
+                margin-top: 0.5rem;
+                text-shadow: 1px 1px $terciary-dark-font-color;
+
+                a {
+                    color: $primary-dark-font-color;
+                    width: 20px;
+                    height: 18;
+
+                    &:hover {
+                        text-decoration: underline;
+                        text-shadow: $primary-glow-color 1px 0 10px;
+                    }
+                }
+                
+            }
+
+            p {
+                font-size: $font-size-small;
+                color: $primary-dark-font-color;
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+            }
+
+            .cart__add-product {
+                margin-bottom: 10px;
+                
+                svg {
+                    width: 30px;
+                    height: 30px;
+   
+                     @include transition-ease;
+                        &:hover {
+                        color: $cart-color;
+                        cursor: pointer;
+                        text-shadow: $cart-color-dark 1px 0 1px;
+                        }
+                }
+                
+            }
+        }
+    }
+
+    .product-card__images {
+        @include flex(column, center);
+        border-radius: 1rem;
+        width: 250px;
+        height: 300px;
+        cursor: pointer;
+    }
+}
+

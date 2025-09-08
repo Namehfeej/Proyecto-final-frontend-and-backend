@@ -1,0 +1,32 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.footer-container {
+    margin-top: 2rem;
+    padding-top: 4px;
+    width: 100wh;
+
+     p {
+        text-align: end;
+    }
+}
+
+.footer-social-medias {
+    @include position (relative);
+    @include flex(row, center);
+    background-color: $primary-dark-color;
+    svg {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        color: $primary-dark-font-color;
+        padding: 0.4rem;
+        @include transition-ease;
+    
+        &:hover {
+            color: $terciary-color;
+        }
+    }
+
+   
+}

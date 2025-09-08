@@ -1,0 +1,40 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+    .main-container__checkout {
+
+            .checkout__content {
+                display: flex;
+                flex-direction: column;
+                
+                .item__container {
+                    @include flex(row, space-between);
+
+                }
+                padding: 2rem;
+                .checkout_image {
+                    width: 70px;
+                    border-radius: 8px;
+                }
+                b {
+                    text-align: center;
+                }
+                
+            }
+
+            .total__amount-checkout {
+                    
+                        text-align: center;
+                        font-size: larger;
+                        margin-top: 1rem;
+                        margin-bottom: 2rem;
+                    
+
+            }
+
+            #walletBrick_container {
+                width: 20%;
+                @include flex(column, center);
+                margin: 0 auto;
+            }
+    }   
