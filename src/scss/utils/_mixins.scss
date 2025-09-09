@@ -56,7 +56,7 @@
 }
 
 @mixin media-ds {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 425px) {
         @content;
     }
 }
@@ -75,6 +75,12 @@
 
 @mixin media-xl {
     @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-xxl {
+    @media screen and (min-width: 2500px) {
         @content;
     }
 }

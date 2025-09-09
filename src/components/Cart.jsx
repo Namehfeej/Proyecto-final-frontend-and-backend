@@ -23,15 +23,23 @@ const navigate = useNavigate()
 
     const totalAmount = cart.reduce( (acc, item) => acc + (item.price * item.quantity), 0)
 
+    const cartItems = cart.map((item) => ({
+            productId: item.id,
+            title: item.name,
+            picture_url: item.img,
+            quantity: item.quantity,
+            unit_price: item.price
+        }))
 
     const handleBuyCart = () => {
         navigate("/checkout")
         setOpenCart(false)
         setOpenMenu(false)
-        postOrder([cart])   
+        postOrder({cartItems})   
     }
 
-    
+    console.log({cart})
+    console.log(Object.keys(cart).length)
 
   return (
     <>
@@ -43,8 +51,9 @@ const navigate = useNavigate()
 
         </div>
         <CartModal showCart={openCart} closeCart={() => setOpenCart(false)} >
+            
             <div className='shoppingCart__container'>
-                <h3>Shopping Cart</h3>
+                
                 
                     {   
                         cart.map( (item ) => (

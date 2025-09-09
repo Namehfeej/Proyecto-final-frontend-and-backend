@@ -7,7 +7,6 @@ import { postPreferenceMp } from '../utils/api';
 
 function Checkout() {
     const [preferenceId, setPreferenceId] = useState("");
-
     const [cart, setCart] = useContext(CartContext)
 
 

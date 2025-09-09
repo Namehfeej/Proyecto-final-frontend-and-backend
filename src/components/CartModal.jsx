@@ -15,6 +15,7 @@ function CartModal({
                         <div className='close_cartModal' onClick={closeCart}>
                             < AiOutlineCloseCircle/>
                         </div>
+                        <h3>Shopping Cart</h3>
                         {children}
                     </div>
                 </div>,

@@ -4,25 +4,19 @@
 
 .cartModal__container {
     @include position(fixed);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    @include flex(column, flex-end);
     margin-top: 20px;
     height: 100vh;
     min-width: 60vw;
-    overflow: scroll;
-    overscroll-behavior: contain;
 
 
     .cartModal_content {
         background-color: $secondary-color;
         min-width: 40vw;
-        overflow: scroll;
-        overscroll-behavior: contain;
-        padding: 1.5rem;
     }
 
     .close_cartModal {
+        @include moveElement (-80px, 20px);
         background-color: transparent;
             border: none;
             margin-top: 1.5rem;
