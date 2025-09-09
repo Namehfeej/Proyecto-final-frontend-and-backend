@@ -12,9 +12,13 @@ function HearthModal({
             createPortal(
                 <div className='heartModal__container' role='button' onClick={closeHeart}>
                     <div className='heartModal_content' onClick={e => e.stopPropagation()}>
-                        <div className='close_cartModal' onClick={closeHeart}>
+                        <div className='title-and-closemoda__container'>
+                            <div className='close_cartModal' onClick={closeHeart}>
                             < AiOutlineCloseCircle/>
+                            </div>
+                            <h3>Favorites</h3>
                         </div>
+                        
                         {children}
                     </div>
                 </div>,

@@ -12,10 +12,13 @@ function CartModal({
             createPortal(
                 <div className='cartModal__container' role='button' onClick={closeCart}>
                     <div className='cartModal_content' onClick={e => e.stopPropagation()}>
-                        <div className='close_cartModal' onClick={closeCart}>
+                        <div className='title-and-closemoda__container'>
+                            <div className='close_cartModal' onClick={closeCart}>
                             < AiOutlineCloseCircle/>
+                            </div>
+                            <h3>Shopping Cart</h3>
                         </div>
-                        <h3>Shopping Cart</h3>
+                        
                         {children}
                     </div>
                 </div>,

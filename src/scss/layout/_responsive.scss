@@ -3,6 +3,33 @@
 
 @include media-dxs {
 
+    .home-title {
+       text-align: center;
+        padding-top: 60px; 
+
+        .home-title__glow {
+            font-size: 30px;
+        }
+
+        p {
+           font-size: 14px;
+            text-align: center; 
+        }
+        
+    }
+
+    .product-card__container {
+        font-size: 12px;
+        .product-card {
+            .product-card__info  {
+                p {
+                    font-size: 10px;}
+            }
+        }
+    }
+     
+     
+
     .main-container__contact {
         margin-bottom: 10rem;
     }
@@ -32,14 +59,7 @@
         font-size: 12px;
      }
 
-     .cartModal__container {
-        @include position(absolute);
-        @include flex(column, flex-end);
-        margin-top: 20px;
-        height: 100vh;
-        overflow: scroll;
-        overscroll-behavior: contain;
-    }
+     
 
     .heartModal__container {
         @include position(absolute);
@@ -47,8 +67,6 @@
         margin-top: 20px;
         margin-right: -20px;
         height: 100vh;
-        overflow: scroll;
-        overscroll-behavior: contain;
     }
 
     }
@@ -102,48 +120,7 @@
 
     }
 
-    .cartModal__container {
-        @include position(absolute);
-        
-        @include moveElement(1px, 60px);
-        height: 100vh;
-        width: 100%;
-        .cartModal_content {
-            background-color: $secondary-color;
-            font-size: small;
-            margin-top: 20px;
-             @include moveElement(1px, 24px);
-            
-        }
-        
-    .shoppingCart__container {
-        height: 100vh;
-        width: 268px;
-        @include moveElement (-20px, 20px);
-        .shoppingCart__content {
-            
-            .item__container {
-                width: 260px;
-                
-            }
-            .counter__container {
-                width: 260px;
-                @include flex(row, space-between);
-            }
-            .close_cartModal {
-                @include moveElement (-20px, 20px);
-            }
-            b {
-                @include flex(row, center);
-                text-align: center;
-            }
-            hr {
-                width: 260px;
-            }
-            
-        }
-    }
-    }
+
 
     .heartModal__container {
         font-size: 12px;
@@ -151,6 +128,10 @@
 
     .wallet__container {
         width: 36%;
+    }
+
+    #img {
+        font-size: 10px;
     }
 
 }
@@ -162,11 +143,12 @@
         .form-container {
             div {
                 input {
-                    width: 400px;
+                    width: 330px;
                 }
                 textarea {
-                    width: 400px;
+                    width: 330px;
                 }
+                
             }
         }
         .form-container__product input{
@@ -177,48 +159,6 @@
             width: 40%;
     }
     }
-
-    .cartModal__container {
-        @include position(fixed);
-        background-color: transparent;
-        @include moveElement(-50px, -20px);
-        height: 100vh;
-
-        .cartModal_content {
-            background-color: $secondary-color;
-            font-size: small;
-            margin-top: 20px;
-            margin-left: 60px;
-        }
-        
-    .shoppingCart__container {
-        height: 100vh;
-
-        .shoppingCart__content {
-            
-            .item__container {
-                width: 150px;
-                
-            }
-            .counter__container {
-                width: 150px;
-                @include flex(row, space-between);
-                margin: 0;
-                padding: 0;
-            }
-            b {
-                @include flex(row, center);
-                text-align: center;
-                width: 100%;
-            }
-            hr {
-                width: 150px;
-            }
-            
-        }
-    }
-    }
-
 }
 
 @include media-md {
@@ -250,11 +190,8 @@
         display: flex;
         flex-direction: column;
         min-width: 40vw;
-        //@include moveElement(400px, 0px);
         .heartModal__content {
             background-color: $secondary-color;
-            //overflow: scroll;
-            overscroll-behavior: contain;
             padding: 1.5rem;
             font-size: medium;
             min-width: 40vw;
@@ -262,10 +199,8 @@
     }
 
     .favorites__container {
-        width: 320px;
-        margin: 40px;
+        width: 600px;
         .favorites__content {
-            margin-bottom: 20px;
             @include moveElement(110px, 0px);
         }
     }
@@ -274,45 +209,7 @@
             width: 80%
     }
 
-    .cartModal__container {
-        @include position(fixed);
-        background-color: transparent;
-        @include moveElement(-50px, -40px);
-        height: 100vh;
-
-        .cartModal_content {
-            background-color: $secondary-color;
-            font-size: small;
-            margin-top: 20px;
-        }
-        
-    .shoppingCart__container {
-        height: 100vh;
-
-        .shoppingCart__content {
-            
-            .item__container {
-                width: 200px;
-                
-            }
-            .counter__container {
-                width: 200px;
-                @include flex(row, space-between);
-                margin: 0;
-                padding: 0;
-            }
-            b {
-                @include flex(row, center);
-                text-align: center;
-                width: 100%;
-            }
-            hr {
-                width: 200px;
-            }
-            
-        }
-    }
-    }
+   
 
 }
 
@@ -321,14 +218,18 @@
     .about-card-info  {
         margin-left: 6rem;
         margin-right: 6rem;
+        
         .form-container {
+            
             div {
                 input {
                     width: 750px;
+                    
                 }
                 textarea {
                     width: 750px;
                 }
+                
             }
         }
         
@@ -354,56 +255,14 @@
         margin-top: 30rem;
     }
 
-    .cartModal__container {
-        @include position(fixed);
-        background-color: transparent;
-        @include moveElement(-220px, -40px);
-        height: 100vh;
-
-        .cartModal_content {
-            background-color: $secondary-color;
-            font-size: small;
-            margin-top: 20px;
-        }
-        
-    .shoppingCart__container {
-        height: 100vh;
-
-        .shoppingCart__content {
-            
-            .item__container {
-                width: 250px;
-                
-            }
-            .counter__container {
-                width: 250px;
-                @include flex(row, space-between);
-                margin: 0;
-                padding: 0;
-            }
-            b {
-                @include flex(row, center);
-                text-align: center;
-                width: 100%;
-            }
-            hr {
-                width: 250px;
-            }
-            
-        }
-    }
-    }
 
     .heartModal__container {
         @include position(fixed);
         display: flex;
         flex-direction: column;
         min-width: 40vw;
-        //@include moveElement(500px, 0px);
         .heartModal__content {
             background-color: $secondary-color;
-            overflow: scroll;
-            overscroll-behavior: contain;
             padding: 1.5rem;
             font-size: medium;
             min-width: 40vw;
@@ -411,11 +270,9 @@
     }
 
     .favorites__container {
-        width: 320px;
-        margin: 40px;
+        
         .favorites__content {
             margin-bottom: 20px;
-            @include moveElement(110px, 0px);
         }
     }
 
@@ -430,7 +287,14 @@
         }
     }
     
-    
+    .cartModal__container {
+        .cartModal_content {
+            .shoppingCart__container {
+                max-height: 600px;
+            }
+        }
+        
+    } 
 
 }
 
@@ -474,113 +338,70 @@
 .cartModal__container {
         @include position(fixed);
         background-color: transparent;
-        @include moveElement(700px, 0px);
+        @include moveElement(590px, 0px); 
+    }
 
+    .cartModal__container {
         .cartModal_content {
-            background-color: $secondary-color;
-            font-size: large;
+            .shoppingCart__container {
+                max-height: 500px;
+            }
         }
         
-    .shoppingCart__container {
-       
-        height: 100vh;
-
-        .shoppingCart__content {
-            
-            .item__container {
-                width: 380px;
-            }
-            .counter__container {
-                width: 400px;
-                @include flex(row, space-between);
-            }
-            b {
-                @include flex(row, center);
-                text-align: center;
-                width: 100%;
-            }
-            hr {
-                width: 400px;
-            }
-            
-        }
-    }
     }
 
 }
 
 @include media-xxl {
 
+    .main-container {
+        width: 100%;
+        padding-top: 3.5rem;
+        height: auto;
+    }
+
     .cartModal__container {
         @include position(fixed);
         background-color: transparent;
-        @include moveElement(1024px, 0px);
-
+        @include moveElement(1200px, 0px); 
+    }
+    .cartModal__container {
         .cartModal_content {
-            background-color: $secondary-color;
-            font-size: large;
+            .shoppingCart__container {
+                max-height: 500px;
+            }
         }
-        .close_cartModal {
-            
-        }
-
         
-
-    .shoppingCart__container {
-        width: 90%;
-        height: 100vh;
-
-        .shoppingCart__content {
-            padding: 20px;
-            margin-left: 90px;
-            .item__container {
-                width: 1100px;
-            }
-            .counter__container {
-                width: 1100px;
-                @include flex(row, space-between);
-            }
-            b {
-                @include flex(row, center);
-                text-align: center;
-                width: 100%;
-            }
-            hr {
-                width: 1000px;
-            }
-            
-        }
-    }
     }
 
-    .heartModal__container {
-        @include position(fixed);
-        display: flex;
-        flex-direction: column;
-        min-width: 40vw;
-        @include moveElement(1200px, 0px);
-        .heartModal__content {
-            background-color: $secondary-color;
-            padding: 1.5rem;
-            font-size: medium;
+        .heartModal__container {
+            @include position(fixed);
+            display: flex;
+            flex-direction: column;
             min-width: 40vw;
+            //@include moveElement(1200px, 0px);
+            .heartModal__content {
+                background-color: $secondary-color;
+                padding: 1.5rem;
+                font-size: medium;
+                min-width: 40vw;
+            }
         }
-    }
 
-    .favorites__container {
-        width: 900px;
-        margin: 40px;
-        @include moveElement(50px, 0px);
-        .favorites__content {
-            margin-bottom: 20px;
-            @include moveElement(110px, 0px);
-            .item__container {
-                width: 600px;
-                @include flex(row, space-between);
-            }
-            hr {
-                width: 600px;
+        .favorites__container {
+            width: 900px;
+            margin: 40px;
+            //@include moveElement(50px, 0px);
+            .favorites__content {
+                margin-bottom: 20px;
+                @include moveElement(110px, 0px);
+                .item__container {
+                    width: 600px;
+                    @include flex(row, space-between);
+                }
+                hr {
+                    width: 600px;
+                }
             }
         }
-    }
 }

@@ -38,8 +38,7 @@ const navigate = useNavigate()
         postOrder({cartItems})   
     }
 
-    console.log({cart})
-    console.log(Object.keys(cart).length)
+
 
   return (
     <>

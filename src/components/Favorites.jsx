@@ -42,10 +42,6 @@ function Favorites({id}) {
         </div>
         <HeartModal showHeart={openHeart} closeHeart={() => setOpenHeart(false)}>
             <div className='favorites__container'>
-                <div className='favorites_title'>
-                    <h3>Favorites</h3>
-                </div>
-                
                     
                     {  
                         favorites.map( (item ) => (
