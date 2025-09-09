@@ -271,6 +271,23 @@ header .navbar-container .menu-nav__search input {
 }
 
 @media screen and (min-width: 320px) {
+  .home-title {
+    text-align: center;
+    padding-top: 60px;
+  }
+  .home-title .home-title__glow {
+    font-size: 30px;
+  }
+  .home-title p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .product-card__container {
+    font-size: 12px;
+  }
+  .product-card__container .product-card .product-card__info p {
+    font-size: 10px;
+  }
   .main-container__contact {
     margin-bottom: 10rem;
   }
@@ -291,26 +308,15 @@ header .navbar-container .menu-nav__search input {
   .menuModal__container .menuModal_content {
     font-size: 12px;
   }
-  .menuModal__container .cartModal__container {
+  .menuModal__container .heartModal__container {
     position: absolute;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex-direction: column;
-    align-items: flex-end;
-    margin-top: 20px;
-    height: 100vh;
-    overflow: scroll;
-    overscroll-behavior: contain;
-  }
-  .menuModal__container .heartModal__container {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     margin-top: 20px;
     margin-right: -20px;
     height: 100vh;
-    overflow: scroll;
-    overscroll-behavior: contain;
   }
   .main-container__product-details .product-details__page p {
     font-size: 8px;
@@ -335,64 +341,26 @@ header .navbar-container .menu-nav__search input {
   .main-container__product-details .product-details__container .products-details__card .products-details__images img {
     width: 300px;
   }
-  .cartModal__container {
-    width: 0vw;
-    transform: translate(0px, 0px);
-  }
-  .cartModal__container .cartModal_content {
-    background-color: #E6CCB2;
-    min-width: 40vw;
-    overflow: scroll;
-    overscroll-behavior: contain;
-    padding: 1.5rem;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .cartModal__container .cartModal_content .shoppingCart__container .buy_over__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 20px;
-  }
-  .cartModal__container .cartModal_content .shoppingCart__container .buy_over__container .buy_over__button button {
-    font-size: 12px;
-  }
-  .cartModal__container .cartModal_content .shoppingCart__container h3 {
-    font-size: small;
-    text-align: right;
-    margin-right: 20px;
-  }
-  .cartModal__container .cartModal_content .shoppingCart__container .shoppingCart__content {
-    width: 140px;
-    height: 140px;
-  }
-  .cartModal__container .cartModal_content .shoppingCart__container .total__amount {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .cartModal__container .cartModal_content .shoppingCart__container .total__amount b {
-    margin-right: 24px;
-  }
   .heartModal__container {
     font-size: 12px;
   }
   .wallet__container {
     width: 36%;
   }
+  #img {
+    font-size: 10px;
+  }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 425px) {
   .about-card-info {
     margin-left: 1rem;
     margin-right: 1rem;
   }
   .about-card-info .form-container div input {
-    width: 400px;
+    width: 330px;
   }
   .about-card-info .form-container div textarea {
-    width: 400px;
+    width: 330px;
   }
   .about-card-info .form-container__product input {
     width: 400px;
@@ -400,18 +368,8 @@ header .navbar-container .menu-nav__search input {
   .about-card-info .wallet__container {
     width: 40%;
   }
-  .cartModal__container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 20px;
-    height: 100vh;
-    overflow: scroll;
-    overscroll-behavior: contain;
-  }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 768px) {
   .about-card-info {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -434,29 +392,21 @@ header .navbar-container .menu-nav__search input {
     display: flex;
     flex-direction: column;
     min-width: 40vw;
-    transform: translate(400px, 0px);
   }
   .heartModal__container .heartModal__content {
     background-color: #E6CCB2;
-    overflow: scroll;
-    overscroll-behavior: contain;
     padding: 1.5rem;
     font-size: medium;
     min-width: 40vw;
   }
   .favorites__container {
-    width: 320px;
-    margin: 40px;
+    width: 600px;
   }
   .favorites__container .favorites__content {
-    margin-bottom: 20px;
     transform: translate(110px, 0px);
   }
   .wallet__container {
     width: 80%;
-  }
-  .cartModal__container {
-    transform: translate(-140px, 0px);
   }
 }
 @media screen and (min-width: 1024px) {
@@ -482,106 +432,36 @@ header .navbar-container .menu-nav__search input {
   .main-container__aboutUs {
     height: auto;
   }
-  .menu-nav__search {
-    transform: translate(-45px, -8px);
-  }
   .home-btn__container-alta {
     margin-top: 30rem;
-  }
-  .cartModal__container {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    transform: translate(-140px, 0px);
-  }
-  .cartModal__container .cartModal_content {
-    background-color: #E6CCB2;
-    overflow: scroll;
-    overscroll-behavior: contain;
-    padding: 1.5rem;
-    font-size: medium;
-    width: 300px;
-  }
-  .cartModal__container .close_cartModal {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    transform: translate(-245px, 0px);
-  }
-  .cartModal__container .cartModal_content .shoppingCart__container .shoppingCart__content {
-    width: 400px;
-  }
-  .cartModal__container .cartModal_content .shoppingCart__container .total__amount {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-  }
-  .cartModal__container .cartModal_content .shoppingCart__container .buy_over__button {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    transform: translate(-224px, 0px);
-  }
-  .shoppingCart__container {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-  }
-  .shoppingCart__container h3 {
-    display: flex;
-    margin-left: 60px;
-    margin-top: 20px;
-  }
-  .shoppingCart__container .shoppingCart__content .item__container {
-    width: 300px;
-  }
-  .shoppingCart__container .shoppingCart__content .counter__container {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .shoppingCart__container .shoppingCart__content b {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-    width: 300px;
-  }
-  .shoppingCart__container .shoppingCart__content hr {
-    width: 300px;
   }
   .heartModal__container {
     position: fixed;
     display: flex;
     flex-direction: column;
     min-width: 40vw;
-    transform: translate(500px, 0px);
   }
   .heartModal__container .heartModal__content {
     background-color: #E6CCB2;
-    overflow: scroll;
-    overscroll-behavior: contain;
     padding: 1.5rem;
     font-size: medium;
     min-width: 40vw;
   }
-  .favorites__container {
-    width: 320px;
-    margin: 40px;
-  }
   .favorites__container .favorites__content {
     margin-bottom: 20px;
-    transform: translate(110px, 0px);
   }
   .wallet__container {
     font-size: 12px;
     width: 100%;
   }
+  .menuModal__container .close_menuModal {
+    margin-left: 20px;
+  }
+  .cartModal__container .cartModal_content .shoppingCart__container {
+    max-height: 600px;
+  }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .about-card-info {
     margin-left: 6rem;
     margin-right: 6rem;
@@ -611,101 +491,56 @@ header .navbar-container .menu-nav__search input {
   }
   .cartModal__container {
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    transform: translate(550px, 0px);
+    background-color: transparent;
+    transform: translate(590px, 0px);
   }
-  .cartModal__container .cartModal_content {
-    background-color: #E6CCB2;
-    overflow: scroll;
-    overscroll-behavior: contain;
-    padding: 1.5rem;
-    font-size: medium;
-    width: 400px;
-    transform: translate(20px, 0px);
+  .cartModal__container .cartModal_content .shoppingCart__container {
+    max-height: 500px;
   }
-  .cartModal__container .close_cartModal {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    transform: translate(-245px, 0px);
+}
+@media screen and (min-width: 2560px) {
+  .main-container {
+    width: 100%;
+    padding-top: 3.5rem;
+    height: auto;
   }
-  .cartModal__container .cartModal_content .shoppingCart__container .shoppingCart__content {
-    width: 400px;
+  .cartModal__container {
+    position: fixed;
+    background-color: transparent;
+    transform: translate(1200px, 0px);
   }
-  .cartModal__container .cartModal_content .shoppingCart__container .total__amount {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-  }
-  .cartModal__container .cartModal_content .shoppingCart__container .buy_over__button {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    transform: translate(-224px, 0px);
-  }
-  .shoppingCart__container {
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-  }
-  .shoppingCart__container h3 {
-    display: flex;
-    margin-left: 60px;
-    margin-top: 20px;
-  }
-  .shoppingCart__container .shoppingCart__content .item__container {
-    width: 300px;
-  }
-  .shoppingCart__container .shoppingCart__content .counter__container {
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
-  .shoppingCart__container .shoppingCart__content b {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    text-align: center;
-    width: 400px;
-  }
-  .shoppingCart__container .shoppingCart__content hr {
-    width: 400px;
+  .cartModal__container .cartModal_content .shoppingCart__container {
+    max-height: 500px;
   }
   .heartModal__container {
     position: fixed;
     display: flex;
     flex-direction: column;
     min-width: 40vw;
-    transform: translate(1200px, 0px);
   }
   .heartModal__container .heartModal__content {
     background-color: #E6CCB2;
-    overflow: scroll;
-    overscroll-behavior: contain;
     padding: 1.5rem;
     font-size: medium;
     min-width: 40vw;
   }
   .favorites__container {
-    width: 600px;
+    width: 900px;
     margin: 40px;
-    transform: translate(50px, 0px);
   }
   .favorites__container .favorites__content {
     margin-bottom: 20px;
     transform: translate(110px, 0px);
   }
   .favorites__container .favorites__content .item__container {
-    width: 400px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+  }
+  .favorites__container .favorites__content hr {
+    width: 600px;
   }
 }
 .product-card__container {
@@ -1180,18 +1015,20 @@ header .navbar-container .menu-nav__search input {
 .menuModal__container {
   position: fixed;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   flex-direction: column;
-  align-items: flex-end;
   background-color: #DDB892;
   transform: translate(0px, 40px);
 }
 .menuModal__container .menuModal_content {
   background-color: #E6CCB2;
-  min-width: 40vw;
+  min-width: 50vw;
   height: 100vh;
   padding: 1.5rem;
 }
 .menuModal__container .close_menuModal {
+  transform: translate(8px, 0px);
   background-color: transparent;
   border: none;
   margin-top: 1.5rem;
@@ -1370,7 +1207,7 @@ header .navbar-container .menu-nav__search input {
   text-shadow: #ffd43b 1px 0 10px;
 }
 .product-card__container .product-card .product-card__info p {
-  font-size: 14px;
+  font-size: 12px;
   color: #212529;
   margin-bottom: 0.5rem;
   font-weight: bold;
@@ -1514,20 +1351,33 @@ header .navbar-container .menu-nav__search input {
 .cartModal__container {
   position: fixed;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
-  align-items: flex-end;
-  margin-top: 20px;
-  height: 100vh;
+  margin-top: 40px;
   min-width: 60vw;
-  overflow: scroll;
-  overscroll-behavior: contain;
 }
 .cartModal__container .cartModal_content {
   background-color: #E6CCB2;
-  min-width: 40vw;
-  overflow: scroll;
-  overscroll-behavior: contain;
-  padding: 1.5rem;
+  height: 100vh;
+  width: 60vw;
+}
+.cartModal__container .shoppingCart__container {
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 400px;
+}
+.cartModal__container .title-and-closemoda__container {
+  display: inline-flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  font-size: 12px;
+  margin-left: 10px;
 }
 .cartModal__container .close_cartModal {
   background-color: transparent;
@@ -1543,22 +1393,26 @@ header .navbar-container .menu-nav__search input {
 .heartModal__container {
   position: fixed;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
-  margin-right: -20px;
-  height: 100vh;
-  min-width: 60vw;
-  overflow: scroll;
-  overscroll-behavior: contain;
+  margin-top: 40px;
+  width: 60vw;
 }
 .heartModal__container .heartModal_content {
   background-color: #E6CCB2;
-  min-width: 60vw;
-  overflow: scroll;
-  overscroll-behavior: contain;
-  padding: 1.5rem;
+  height: 100vh;
+  width: 60vw;
+}
+.heartModal__container .title-and-closemoda__container {
+  display: inline-flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  font-size: 12px;
+  margin-left: 10px;
 }
 .heartModal__container .close_cartModal {
   background-color: transparent;
@@ -1573,8 +1427,6 @@ header .navbar-container .menu-nav__search input {
 
 .shoppingCart__container {
   text-align: center;
-  overflow-y: scroll;
-  height: 100vh;
 }
 .shoppingCart__container .counter__products {
   margin-top: 10px;
@@ -1605,9 +1457,6 @@ header .navbar-container .menu-nav__search input {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  margin-left: 110px;
-  padding: 1rem;
-  max-width: 280px;
 }
 .shoppingCart__container .shoppingCart__content .item__container {
   display: flex;
@@ -1658,8 +1507,8 @@ header .navbar-container .menu-nav__search input {
 
 .favorites__container {
   text-align: center;
+  max-height: 600px;
   overflow-y: scroll;
-  height: 100vh;
 }
 .favorites__container .counter__products {
   margin-top: 10px;
@@ -1673,6 +1522,7 @@ header .navbar-container .menu-nav__search input {
   display: flex;
   flex-direction: column;
   max-width: 280px;
+  margin: 10px;
 }
 .favorites__container .favorites__content .item__container {
   display: flex;
@@ -1761,6 +1611,10 @@ header .navbar-container .menu-nav__search input {
 
 .main-container__alta {
   height: 100vh;
+}
+
+.about-card-info {
+  margin-bottom: 10px;
 }
 
 .main-container__product-details {
