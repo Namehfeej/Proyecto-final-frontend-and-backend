@@ -458,7 +458,7 @@ header .navbar-container .menu-nav__search input {
     margin-left: 20px;
   }
   .cartModal__container .cartModal_content .shoppingCart__container {
-    max-height: 600px;
+    max-height: 420px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -510,7 +510,9 @@ header .navbar-container .menu-nav__search input {
     transform: translate(1200px, 0px);
   }
   .cartModal__container .cartModal_content .shoppingCart__container {
-    max-height: 500px;
+    max-height: 950px;
+    margin-right: 200px;
+    margin-left: 50px;
   }
   .heartModal__container {
     position: fixed;
