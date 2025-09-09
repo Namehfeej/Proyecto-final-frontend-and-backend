@@ -11,7 +11,6 @@ import { HeartContext } from "../context/HeartContext";
 function Card({name, img, description, price, category, id}) {
 
   const [isHeartActive, setIsHeartActive] = useState(false)
-  const [isAddedToCart, setIsAddedToCart] = useState(false)
 
   const [cart, setCart] = useContext(CartContext)
   const [favorites, setFavorites] = useContext(HeartContext)
@@ -33,7 +32,6 @@ function Card({name, img, description, price, category, id}) {
         return [...currentToys, { id, name, img, price, quantity: 1 }]
       }
     })
-    setIsAddedToCart(true)
     
   }
 
@@ -72,7 +70,7 @@ function Card({name, img, description, price, category, id}) {
               <p>Category: {category}</p>
               <p>Price: ${price}</p>
               <div className="btn-buy__container">
-                <Button className={isAddedToCart ? "btn-buy-active" : "btn-buy"} text={isAddedToCart ? "Added" : "Add to cart"} onClick={isAddedToCart ? ()=> alert("The product is already added") : addToyToCart}></Button>
+                <Button className="btn-buy" text="Add to cart" onClick={addToyToCart}></Button>
                 <AiTwotoneShopping />
               </div>
 

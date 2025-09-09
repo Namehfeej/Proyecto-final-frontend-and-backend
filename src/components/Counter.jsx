@@ -8,14 +8,14 @@ import { FaRegTrashAlt } from "react-icons/fa";
 function Counter({id}) {
 
   const [cart, setCart] = useContext(CartContext)
-
+  
 
   const toyById = (id) => cart.find(item => item.id === id)
   //console.log(toyById(id))
 
   const quantityPerToy = toyById(id).quantity
 
-      const [count, setCount] = useState(quantityPerToy || 0)
+  const [count, setCount] = useState(quantityPerToy || 0)
 
           
 
@@ -68,6 +68,7 @@ function Counter({id}) {
           })
         })
         setCount(0)
+        
     }
 
   return (
