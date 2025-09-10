@@ -61,7 +61,7 @@ function Upload() {
                 .then(() => resetForm())
                 .catch( err => console.error(err) )
         } else {
-            console.log("Formulario inválido")
+            alert("Formulario inválido")
         }
     }
 

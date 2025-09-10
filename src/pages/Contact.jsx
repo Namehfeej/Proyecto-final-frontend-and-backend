@@ -45,7 +45,7 @@ const handleSubmit = e => {
         .catch(err => console.error(err))
         resetForm()
     } else {
-        console.log("Formulario inválido")
+        alert("Formulario inválido")
     }
 
     

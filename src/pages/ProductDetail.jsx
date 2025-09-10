@@ -16,16 +16,16 @@ function ProductDetail() {
           .then(data => setGetToysById(data))
   }, [id])
 
-  console.log({getToysById})
+  //console.log({getToysById})
 
   const urlImg = () => getToysById.filter(toy => toy.id === id)
-  console.log(urlImg())
+  //console.log(urlImg())
 
   const urlToyImgage = urlImg().map(toy => toy.imgDetails)
-  console.log(urlToyImgage)
+  //console.log(urlToyImgage)
 
  let genId = crypto.randomUUID().slice(0, 4)
-  console.log(genId) 
+  //console.log(genId) 
   if(getToysById)
 
   return (
