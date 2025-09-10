@@ -20,11 +20,11 @@ function Contact() {
         errorText: "El email no tiene el formato correcto"
     },
     subject: {
-        validation: value => value.length > 0,
+        validation: value => value.length > 1,
         errorText: "El asunto es obligatorio"
     },
     message: {
-        validation: value => value.length > 0,
+        validation: value => value.length > 1,
         errorText: "Ingrese un texto"
     }
 }
